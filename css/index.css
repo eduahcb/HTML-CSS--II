@@ -96,3 +96,15 @@ main {
     padding-bottom: 0;
     float: none;
 }
+
+.subtitulo-principal{
+    font-size: .4em;
+    text-align: center;
+}
+
+.palavra-home{
+    font-family: "Shadows Into Light", cursive;
+    font-size: .4em;
+    color: #D5447E;
+    font-weight: bold;
+}
