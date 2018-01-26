@@ -48,6 +48,16 @@
     margin-bottom: .5em;
 }
 .trabalhos {
+    background-image: linear-gradient(135deg,
+                        transparent,
+                        transparent 14px,
+                        rgba(0, 0, 0, 0.1) 14px,
+                        rgba(0, 0, 0, 0.1) 15px,
+                        transparent 15px,
+                        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
@@ -68,6 +78,16 @@
     display: block;
 }
 .blog {
+    background-image: linear-gradient(45deg,
+    transparent,
+    transparent 14px,
+    rgba(255, 255, 255, 0.1) 14px,
+    rgba(255, 255, 255, 0.1) 15px,
+    transparent 15px,
+    transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+
     background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
