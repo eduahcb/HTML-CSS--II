@@ -149,6 +149,7 @@ main {
 }
 
 .javascript {
+    opacity: .3;
     position: absolute;
     top: 15%;
     left: 60%;
@@ -177,6 +178,7 @@ main {
 }
 
 .agilidade {
+    opacity: .1;
     position: absolute;
     top: 75%;
     left: 35%;
@@ -184,6 +186,7 @@ main {
 }
 
 .design {
+    opacity: .6;
     position: absolute;
     top: 40%;
     left: 60%;
@@ -260,4 +263,9 @@ body{
 
 .palavras-chave .titulo-principal {
     transform-style: preserve-3d;
+}
+
+.modal p{
+   text-align: center;
+   color: #000;
 }
