@@ -7,13 +7,13 @@
     text-align: center;
 }
 
-.artigos {
+.artigos + .artigos {
     background-image: -webkit-linear-gradient(to right, transparent, #000, transparent);
     background-image: -moz-linear-gradient(to right, transparent, #000, transparent);
     background-image: linear-gradient(to right, transparent, #000, transparent);
     background-size: 100% 1px;
     background-repeat: no-repeat;
-    background-position: bottom center;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
+    background-position: top center;
+    margin-top: 20px;
+    padding-top: 30px;
 }
