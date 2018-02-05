@@ -1,4 +1,4 @@
-.foto-home {
+foto-home {
     height: 200px;
     border-radius: 50%;
 }
@@ -227,11 +227,6 @@ header{
     color: #000;
     padding: 1.5em;
 }
-
-.blog .mais-recente{
-    background-color: #F2FFFC;
-}
-
 .blog .mais-recente a {
     color: #F26;
 }
@@ -288,4 +283,19 @@ body{
 .modal p{
    text-align: center;
    color: #000;
+}
+
+.inicio-post{
+    display: none;
+}
+
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post{
+    display: block;
+}
+
+
+.blog .mais-recente:hover
+.blog .mais-recente:focus{
+    background-color: #F2FFFC;
 }

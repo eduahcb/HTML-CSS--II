@@ -6,11 +6,11 @@
     margin: 1em 2em;
 }
 
-.fiat {
+.citacoes:nth-of-type(odd) {
     float: right;
 }
 
-.petrobras{
+.citacoes:nth-of-type(even){
     float: left;
 }
 
@@ -21,4 +21,20 @@
 cite{
     float: right;
     font-style: italic;
+}
+
+
+.citacoes:hover,
+.citacoes:focus{
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.5);
+}
+
+.citacoes:nth-of-type(odd):hover,
+.citacoes:nth-of-type(odd):focus{
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.citacoes:nth-of-type(even):hover,
+.citacoes:nth-of-type(even):focus{
+    transform: scale(1.2) rotate(5deg);
 }

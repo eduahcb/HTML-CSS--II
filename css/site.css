@@ -140,3 +140,15 @@ main {
     top: 0;
     right:0;
 }
+
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus{
+    color: red;
+}
+
+.menu-navegacao a:hover,
+.menu-navegacao a:focus{
+    text-shadow: 0 0 2px pink;
+}
