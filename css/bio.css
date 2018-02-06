@@ -38,3 +38,34 @@ cite{
 .citacoes:nth-of-type(even):focus{
     transform: scale(1.2) rotate(5deg);
 }
+
+.container p::first-letter{
+    font-size: 2em;
+    margin-right: .2ch;
+}
+
+.citacoes:before{
+    content: '"';
+    position: absolute;
+    font-size: 3em;
+    color: #bbb;
+    line-height: .8;
+}
+
+.citacoes > p{
+    position: relative;
+}
+
+.redes-sociais a:hover::after,
+.redes-sociais a:focus::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 95%;
+    right: 40%;
+    text-indent: 0;
+    font-size: .5em;
+}
+
+.redes-socias a{
+    position: relative;
+}
