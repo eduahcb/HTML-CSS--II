@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/site.css">
-
+    <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
@@ -19,16 +19,14 @@
 
         <div class="container">
             <form>
-                <fieldset>
+                <fieldset class="dadospessoais">
                     <legend>Dados Pessoais</legend>
-                    <label>
-                        Nome:
-                        <input type="text" name="nome" placeholder="Digite o seu nome aqui" autofocus required>
-                    </label>
-                    <label>
-                        E-mail:
-                        <input type="email" name="email" placeholder="Digite o seu e-mail" required>
-                    </label>
+                    <label for="nome-campo">Nome:</label>
+                    <input id="nome-campo" type="text" name="nome" placeholder="Digite o seu nome aqui" autofocus required>
+
+                    <label for="email-campo">Email:</label>
+                    <input id="email-campo" type="email" name="email" placeholder="Digite o seu e-mail" required>
+
                 </fieldset>
                 <fieldset>
                     <legend>Assunto</legend>
@@ -40,17 +38,15 @@
                         <input type="radio" name="assunto" value="servico"> Serviço
                     </label>
                     <fieldset>
-                        <input type="radio" name="assunto" value "outro"> Outro
-
+                        <input id="outro" type="radio" name="assunto" value="outro">
+                        <label for="outro">Outro</label>
                         <input type="text" name="campo-outro">
                     </fieldset>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Mensagem</legend>
-
-                    <textarea name="msg" cols="30" rows="10" placeholder="mensagem"></textarea>
-                </fieldset>
+                <label for="msg">Mensagem</label>
+                <textarea id="msg" name="mensagem" cols="30" rows="10"></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </main>

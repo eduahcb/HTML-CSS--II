@@ -1,0 +1,55 @@
+legend, label[for="msg"]{
+    font-weight: bold;
+    margin-top: 1em;
+}
+label[for]{
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: .5em .25em;
+    font-size: 100%;
+    font-family:  inherit;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+fieldset > fieldset{
+    display: inline;
+}
+label[for="outro"]{
+    display: inline;
+}
+input[name="campo-outro"]{
+    width: auto;
+}
+input[type="text"]:focus{
+    background-color: lightyellow;
+}
+input[type="text"]:invalid,{
+    box-shadow: 0 0 0 1px red;
+}
+button{
+    float: right;
+    border: 0;
+    background-color: #3C1D3D;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+button:hover,
+button:focus{
+    background-color:#8C1D3D;
+}
+
+
+input[value="outro"] ~ input {
+    display: none;
+}
+
+input[value="outro"]:checked ~ input {
+    display: inline;
+}
