@@ -15,6 +15,11 @@ textarea{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+input[type="text"],
+input[type="email"]{
+    height: 2em;
+}
+
 fieldset > fieldset{
     display: inline;
 }
@@ -24,7 +29,8 @@ label[for="outro"]{
 input[name="campo-outro"]{
     width: auto;
 }
-input[type="text"]:focus{
+input[type="text"]:focus,
+input[type="email"]:focus {
     background-color: lightyellow;
 }
 input[type="text"]:invalid,{
@@ -44,12 +50,41 @@ button:hover,
 button:focus{
     background-color:#8C1D3D;
 }
-
-
 input[value="outro"] ~ input {
     display: none;
 }
-
 input[value="outro"]:checked ~ input {
     display: inline;
+}
+.com-icone::after{
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-color: #8C1D3D;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.com-icone{
+    position: relative;
+}
+
+.com-icone + input{
+    position: relative;
+    left: 2em;
+    width: calc(100% - 2em);
+}
+
+.com-icone[for="nome-campo"]::after{
+    content: "";
+    background-image: url(../img/usuario.png);
+}
+
+.com-icone[for="email-campo"]::after{
+    content: "";
+    background-image: url(../img/email.png);
 }
