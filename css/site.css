@@ -21,6 +21,8 @@ h1, h2{
     border-bottom: .5rem solid #000;
     font-size: 300%;
     text-transform: uppercase;
+
+    animation: aparece 2s;
 }
 
 p {
@@ -152,4 +154,12 @@ footer a:focus{
 .menu-navegacao a:hover,
 .menu-navegacao a:focus{
     text-shadow: 0 0 2px pink;
+}
+
+
+@keyframes aparece{
+    0% {
+        opacity: 0;
+        transform: scale(0.001)
+    }
 }

@@ -4,6 +4,9 @@
     width: 30ch; 
     box-sizing: border-box;
     margin: 1em 2em;
+
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0s;
 }
 
 .citacoes:nth-of-type(odd) {
@@ -27,6 +30,7 @@ cite{
 .citacoes:hover,
 .citacoes:focus{
     box-shadow: 0 0 0 9999px rgba(0,0,0, 0.5);
+    transition-delay: 0s, 1s;
 }
 
 .citacoes:nth-of-type(odd):hover,

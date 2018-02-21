@@ -299,3 +299,28 @@ body{
 .blog .mais-recente:focus{
     background-color: #F2FFFC;
 }
+
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+}
+
+.botao-index {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.banner-twitter{
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards
+}
+
+@keyframes aparece{
+    0% {
+        opacity: 0;
+        transform: scale(0.001)
+    }
+}
