@@ -69,3 +69,40 @@ cite{
 .redes-socias a{
     position: relative;
 }
+
+table{
+    border-collapse: separate;
+    border-spacing: .25em;
+}
+
+table [colspan]{
+    text-align: center;
+    font-style: italic;
+}
+
+table [rowspan]{
+    vertical-align: middle;
+}
+
+table td {
+    background-color: #EEE;
+    color: inherit;
+}
+
+th, tr {
+    margin: .25em;
+    padding: 1em;
+}
+
+th{
+    color: #fff;
+    font-weight: bold;
+}
+
+thead th{
+    background-color: #3C1D3D;
+}
+
+tbody th{
+    background-color: #851944;
+}
